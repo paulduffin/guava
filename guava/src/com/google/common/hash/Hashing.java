@@ -244,6 +244,8 @@ public final class Hashing {
   }
 
   // Lazy initialization holder class idiom.
+  // TODO(user): Investigate whether we need to still use this idiom now that we have a fallback
+  // option for our use of Unsafe.
 
   /**
    * If {@code hashCode} has enough bits, returns {@code hashCode.asLong()}, otherwise
